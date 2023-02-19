@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/joshdejeu/D.R-Floors">
+  <a href="https://github.com/joshdejeu/D.R_Floors">
     <img src="src/assets/logo1.png" alt="Logo" height="80">
   </a>
 
@@ -25,9 +25,9 @@
     <br />
     <a href="https://nixahams-website.pages.dev/">View Live Site</a>
     ·
-    <a href="https://github.com/joshdejeu/D.R-Floors/issues">Report Bug</a>
+    <a href="https://github.com/joshdejeu/D.R_Floors/issues">Report Bug</a>
     ·
-    <a href="https://github.com/joshdejeu/D.R-Floors/issues">Request Feature</a>
+    <a href="https://github.com/joshdejeu/D.R_Floors/issues">Request Feature</a>
   </p>
 </div>
 
@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Josh Dejeu - [dejeujosh@gmail.com](dejeujosh@gmail.com)
 
-Project Link: [https://github.com/joshdejeu/D.R-Floors](https://github.com/joshdejeu/D.R-Floors)
+Project Link: [https://github.com/joshdejeu/D.R_Floors](https://github.com/joshdejeu/D.R_Floors)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,18 +106,18 @@ Resources I found helpful when creating this website. I've included those I woul
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[commits-shield]: https://img.shields.io/github/last-commit/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[commits-url]: https://github.com/joshdejeu/D.R-Floors/commits/master
-[contributors-shield]: https://img.shields.io/github/contributors/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[contributors-url]: https://github.com/joshdejeu/D.R-Floors/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[forks-url]: https://github.com/joshdejeu/D.R-Floors/network/members
-[stars-shield]: https://img.shields.io/github/stars/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[stars-url]: https://github.com/joshdejeu/D.R-Floors/stargazers
-[issues-shield]: https://img.shields.io/github/issues/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[issues-url]: https://github.com/joshdejeu/D.R-Floors/issues
-[license-shield]: https://img.shields.io/github/license/joshdejeu/D.R-Floors.svg?style=for-the-badge
-[license-url]: https://github.com/joshdejeu/D.R-Floors/blob/master/LICENSE.txt
+[commits-shield]: https://img.shields.io/github/last-commit/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[commits-url]: https://github.com/joshdejeu/D.R_Floors/commits/master
+[contributors-shield]: https://img.shields.io/github/contributors/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[contributors-url]: https://github.com/joshdejeu/D.R_Floors/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[forks-url]: https://github.com/joshdejeu/D.R_Floors/network/members
+[stars-shield]: https://img.shields.io/github/stars/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[stars-url]: https://github.com/joshdejeu/D.R_Floors/stargazers
+[issues-shield]: https://img.shields.io/github/issues/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[issues-url]: https://github.com/joshdejeu/D.R_Floors/issues
+[license-shield]: https://img.shields.io/github/license/joshdejeu/D.R_Floors.svg?style=for-the-badge
+[license-url]: https://github.com/joshdejeu/D.R_Floors/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/josh-dejeu-767557239
 [product-screenshot]: images/screenshot.png
