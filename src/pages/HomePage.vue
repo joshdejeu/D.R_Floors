@@ -19,12 +19,13 @@
             </span>
         </div>
         <div id="scroll_icon">
-            <svg 
-                width="50px" viewBox="0 0 14.334 24.75" >
-                <circle class="circle-1" fill="white" cx="7.167" cy="6" r="1.2"/>
-                <circle class="circle-2" fill="white" cx="7.167" cy="6" r="1.2"/>
-            <path stroke="white" fill="transparent" d="M7.167,0.5C3.485,0.5,0.5,3.485,0.5,7.167v10.416                   c0,3.682,2.985,6.667,6.667,6.667s6.667-2.985,6.667-6.667V7.167C13.834,3.485,10.849,0.5,7.167,0.5z"/>
-            </svg>
+            <span id="mouse_outside" class="dark">
+                <span id="mouse_ball" class="dark"></span>
+                <span id="mouse_ball" class="dark"></span>
+            </span>
+        </div>
+        <div id="compare_title" class="textDark">
+            Compare Our Work
         </div>
         <div id="compare_container">
             <ImageCompare/>
@@ -58,14 +59,11 @@ export default {
 </script>
   
 <style scoped>
-
-.circle-1, .circle-2 {
-  animation: scroll 2s infinite linear;
-  opacity:0;
-}
-
-.circle-2{
-  animation-delay: 1s;
+#compare_title{
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding-top: 20vh;
 }
 
 @keyframes scroll {
@@ -185,9 +183,45 @@ export default {
     width: calc(100% - 200px); height: 80vh;
     padding-left: 100px;
     padding-bottom: 25vh;
-    padding-top: 25vh;
+    padding-top: 15vh;
     display: flex;
     justify-content: center; align-items: center;
+}
+#mouse_outside{
+    height: 90px;
+    width: 50px;
+    border-radius: 30px 30px 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    justify-content: start;
+    border: 2px solid white;
+}
+#mouse_ball{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    /* background-color: white; */
+    background-image: url('@/assets/home/arrow.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    margin-top: 30px;
+}
+#mouse_ball:nth-child(1)
+{animation: scrollWheel 3s 1.5s infinite linear}
+#mouse_ball:nth-child(2)
+{animation: scrollWheel 3s 0s infinite linear}
+
+.dark{
+
+}
+@keyframes scrollWheel {
+    0%{transform: translateY(-30px); opacity: 0;}
+    50%{transform: translateY(-10px); opacity: 1;}
+    100%{transform: translateY(10px); opacity: 0;}
 }
 
 

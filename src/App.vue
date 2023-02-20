@@ -1,5 +1,6 @@
 <template>
   <div id="app_body">
+    <Header/>
     <div id="color_mode" @click="colorModeToggle()">
       <img :src="require('@/assets/home/'+bg)" alt="" id="color">
     </div>
@@ -10,11 +11,13 @@
 
 <script>
 import HomePage from './pages/HomePage.vue'
+import Header from './components/PageHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HomePage
+    HomePage,
+    Header
   },
   props: {
 
@@ -35,10 +38,19 @@ export default {
         this.bg = 'moon.svg';
         this.elementTable.homePageBG.className = 'colorLight';
         this.elementTable.logoText.className = 'logoTextLight';
+        this.elementTable.compareTitle.className = 'textLight';
+        this.elementTable.headerOp1.className = 'header_linkLight';
+        this.elementTable.headerOp2.className = 'header_linkLight';
+        this.elementTable.headerOp3.className = 'header_linkLight';
       }else{
         this.bg = 'sun.svg';
         this.elementTable.homePageBG.className = 'colorDark';
         this.elementTable.logoText.className = 'logoTextDark';
+        this.elementTable.compareTitle.className = 'textDark';
+        this.elementTable.headerOp1.className = 'header_linkDark';
+        this.elementTable.headerOp2.className = 'header_linkDark';
+        this.elementTable.headerOp3.className = 'header_linkDark';
+
 
 
       }
@@ -48,6 +60,10 @@ export default {
     this.elementTable = {
       homePageBG: document.getElementById('home'),
       logoText: document.getElementById('home_text'),
+      compareTitle: document.getElementById('compare_title'),
+      headerOp1: document.getElementById('option1'),
+      headerOp2: document.getElementById('option2'),
+      headerOp3: document.getElementById('option3'),
 
     }
   }
@@ -63,6 +79,7 @@ body, html{
 body{
   width: 100%; height: 100%;
   overflow-x: hidden;
+  background-color: inherit;
 }
 #app_body{
   color: #2c3e50;
@@ -88,19 +105,19 @@ body::-webkit-scrollbar {
 
 /* Track */
 body::-webkit-scrollbar-track {
-  background: black;
+  /* background: black; */
 
 }
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: grey;
+  background: #000;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: rgb(190,190,190);
+  background: rgb(80,80,80);
 }
 </style>
 
@@ -116,6 +133,9 @@ body::-webkit-scrollbar-thumb:hover {
   color: white;
   text-shadow: -2px 2px 1px black;
 }
+.textDark{
+  color: white;
+}
 /* <!-- DARK STYLES --> */
 </style>
 
@@ -127,6 +147,9 @@ body::-webkit-scrollbar-thumb:hover {
 .logoTextLight{
   color: black;
   text-shadow: -2px 2px 1px white;
+}
+.textLight{
+  color: black;
 }
 /* <!-- LIGHT STYLES --> */
 </style>

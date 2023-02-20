@@ -1,12 +1,12 @@
 <template>
   <div id="compare" @mousemove="checkPos">
-    <div id="b_img_parent">
+    <div id="a_img_parent">
       <img class="compare_img" src="@/assets/image_compare/after.png" alt="" id="b_img">
     </div>
 
     <span @mousedown="checkDrag($event)" id="img_slider"></span>
 
-    <div id="a_img_parent">
+    <div id="b_img_parent">
       <img class="compare_img" src="@/assets/image_compare/before.png" alt="" id="a_img">
     </div>
   </div>
@@ -30,22 +30,22 @@ export default {
       e.target.style.left = this.posX+'px';
     },
     checkPos(e){
-      let aImg = document.getElementById('a_img_parent');
       let bImg = document.getElementById('b_img_parent');
+      let aImg = document.getElementById('a_img_parent');
       this.posX = e.pageX-105;
       let tg = document.getElementById('img_slider');
       tg.style.left = this.posX+'px';
 
       if(this.posX > window.innerWidth/2)
       {
-        bImg.style.opacity = '0.7';
-        aImg.style.opacity = '0.8';
+        // aImg.style.opacity = '0.7';
+        // bImg.style.opacity = '0.8';
       }else{
-        aImg.style.opacity = '0.7';
-        bImg.style.opacity = '0.8';
+        // bImg.style.opacity = '0.7';
+        // aImg.style.opacity = '0.8';
       }
-      aImg.style.width = this.posX+'px';
-      bImg.style.width = `calc(100% - ${this.posX}px)`;
+      bImg.style.width = this.posX+'px';
+      aImg.style.width = `calc(100% - ${this.posX}px)`;
     }
   },
   mounted() {
@@ -60,22 +60,37 @@ export default {
   background-color: black;
   user-select: none;
   overflow: hidden;
+  /* overflow: visible; */
+  box-shadow: 0px 0px 2px 3px white;
   position: relative;
 }
-#b_img_parent,#a_img_parent{
+#a_img_parent,#b_img_parent{
   width: 100%; height: 100%;
   position: absolute; top: 0;
 }
-#a_img_parent{
-  width: 70%;
-  left: 0;
-  opacity: 0.8;
-
-}
 #b_img_parent{
   width: 30%;
-  right: 0;
-  opacity: 0.7;
+  left: 0;
+  /* opacity: 0.8; */
+}
+#b_img_parent:after{content: 'BEFORE';right: 1em;}
+#a_img_parent:after{content: 'AFTER';left: 1em;}
+#b_img_parent::after,#a_img_parent::after
+{
+  position: absolute;
+  top: 0.5em;
+  color: white;
+  font-size: 3em;
+  font-family: 'Alegreya Sans', sans-serif;
+  color: white;
+  z-index: 33;
+  text-shadow: -2px 2px 3px rgba(0,0,0,0.5);
+  font-weight: bold;
+}
+#a_img_parent{
+  width: 70%;
+  right: 0; 
+  /* opacity: 0.7; */
 }
 
 .compare_img{
@@ -94,10 +109,10 @@ export default {
   height: 100%; width: 10px;
   position: absolute;
   z-index: 2;
-  background-color: black;
+  background-color: white;
   cursor: all-scroll;
-  left: 70%;
-  box-shadow: inset 0px 0px 5px white;
+  left: 30%;
+  box-shadow: inset 0px 0px 5px black;
 }
 #img_slider::after{
   content: '';
@@ -109,9 +124,10 @@ export default {
   background-color: red;
   border-radius: 50%;
   background-image: url('@/assets/image_compare/arrow.png');
+  filter: invert(1);
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0px 0px 5px white;
+  box-shadow: inset 0px 0px 5px black;
 }
 
 @media (max-width: 1201px) {}
