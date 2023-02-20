@@ -14,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/joshdejeu/D.R_Floors">
-    <img src="src/assets/logo1.png" alt="Logo" height="80">
+    <img src="src/assets/logo.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Nixa Amateur Radio Club Website</h3>
