@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <ellipse style="paint-order: stroke; stroke: rgb(255, 221, 0); stroke-opacity: 0; fill: rgb(255, 230, 0);" cx="255.345" cy="242.576" rx="200" ry="200"/>
+  <rect x="234.75" y="14.846" width="70" height="252" style="stroke: rgb(0, 0, 0); fill: rgb(255, 230, 0); stroke-opacity: 0;" rx="10" ry="10"/>
+
+  <rect x="40.38" y="236.936" width="70" height="70" style="stroke: rgb(0, 0, 0); fill: rgb(255, 230, 0); stroke-opacity: 0;" rx="3.563" ry="3.563"/>
+
+  <rect x="427.553" y="243.468" width="43.943" height="70" style="stroke: rgb(0, 0, 0); fill: rgb(255, 230, 0); stroke-opacity: 0;" rx="3.563" ry="3.563"/>
+
+  <rect x="59.976" y="160.926" width="70" height="70" style="stroke: rgb(0, 0, 0); fill: rgb(255, 230, 0); stroke-opacity: 0;" rx="3.563" ry="3.563" transform="matrix(0.743145, 0.669131, -0.669131, 0.743145, 442.871277, 203.568527)"/>
+
+  <rect x="59.976" y="160.926" width="70" height="70" style="stroke: rgb(0, 0, 0); fill: rgb(255, 230, 0); stroke-opacity: 0;" rx="3.563" ry="3.563" transform="matrix(-0.529919, 0.848048, -0.848048, -0.529919, 315.342896, 417.314117)"/>
+</svg>
