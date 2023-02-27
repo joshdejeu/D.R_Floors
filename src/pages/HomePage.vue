@@ -180,8 +180,7 @@ export default {
 
 
 #compare_container{
-    width: calc(100% - 200px); height: 80vh;
-    padding-left: 100px;
+    width: 100%; height: 80vh;
     padding-bottom: 25vh;
     padding-top: 15vh;
     display: flex;

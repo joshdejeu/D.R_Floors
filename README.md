@@ -17,13 +17,10 @@
     <img src="src/assets/logo.png" alt="Logo" height="80">
   </a>
 
-  <h3 align="center">Nixa Amateur Radio Club Website</h3>
+  <h3 align="center">R&D Floors Website</h3>
 
   <p align="center">
-    An in-depth developmental look into how the Nixahams website was created
-    <br />
-    <br />
-    <a href="https://nixahams-website.pages.dev/">View Live Site</a>
+    <a href="https://d-r-floors.pages.dev/">View Live Site</a>
     ·
     <a href="https://github.com/joshdejeu/D.R_Floors/issues">Report Bug</a>
     ·
