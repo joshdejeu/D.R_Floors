@@ -1,6 +1,6 @@
 <template>
   <div id="HELLO">
-     
+
   </div>
 </template>
 
@@ -13,15 +13,15 @@ export default {
   props: {
 
   },
-  data(){
-    return{
+  data() {
+    return {
 
     }
   },
-  methods:{
+  methods: {
 
   },
-  mounted(){
+  mounted() {
 
   }
 }
@@ -31,13 +31,9 @@ export default {
 
 
 
-@media (max-width: 1201px) {
+@media (max-width: 1201px) {}
 
-}
-@media (max-width: 1025px) {
+@media (max-width: 1025px) {}
 
-}
-@media (max-width: 769px) {
-
-}
+@media (max-width: 769px) {}
 </style>

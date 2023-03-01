@@ -31,15 +31,20 @@
             <ImageCompare/>
         </div>
 
+        <div id="contact_container">
+            <ContactSegment/>
+        </div>
+
     </div>
 </template>
   
 <script>
 import ImageCompare from '../components/ImageCompare.vue';
+import ContactSegment from '../components/ContactSeg.vue';
 export default {
     name: 'HomePage',
     components: {
-        ImageCompare
+        ImageCompare, ContactSegment
     },
     props: {
         
@@ -64,6 +69,11 @@ export default {
     font-size: 5em;
     font-family: 'Alegreya Sans', sans-serif;
     padding-top: 20vh;
+}
+#contact_container{
+    width: 100vw; height: 70vh;
+    display: flex;
+    justify-content: center; align-items: center;
 }
 
 @keyframes scroll {
@@ -181,7 +191,7 @@ export default {
 
 #compare_container{
     width: 100%; height: 80vh;
-    padding-bottom: 25vh;
+    padding-bottom: 10vh;
     padding-top: 15vh;
     display: flex;
     justify-content: center; align-items: center;
